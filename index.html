@@ -5,30 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator</title>
-
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <input type="text" id="calc">
-    <input type="button" value="Calculate" id="enter"><br><br>
-
-    <button class="kal" id="1"> 1 </button>
-    <button class="kal" id="2"> 2 </button>
-    <button class="kal" id="3"> 3 </button>
-    <button class="kal" id="4"> 4 </button>
-    <button class="kal" id="5"> 5 </button>
-    <button class="kal" id="6"> 6 </button>
-    <button class="kal" id="7"> 7 </button>
-    <button class="kal" id="8"> 8 </button>
-    <button class="kal" id="9"> 9 </button>
-    <button class="kal" id="0"> 0 </button>
-    <button class="kal" id="+"> + </button>
-    <button class="kal" id="-"> - </button>
-    <button class="kal" id="*"> X </button>
-    <button class="kal" id="/"> / </button>
-
-    <h1 id="res">100</h1>
-
+<body class=" bg-blue-200 p-10">
+    <div class="max-w-md m-auto">
+        <input type="text" id="calc"
+            class="p-2 w-full h-16 font-bold text-3xl border-4 rounded-xl bg-blue-500 border-blue-300">
+        <h1 id="res" class="mt-2 p-2 w-full h-16 font-bold text-3xl border-4 rounded-xl bg-blue-500 border-blue-300">
+        </h1>
+        <div
+            class="operator rounded-xl mt-2 p-4 bg-blue-500 border-blue-300 border-4 grid grid-cols-4 auto-cols-max-4 gap-4 justify-items-center">
+            <button class="kal rounded-xl bg-blue-300 border-blue-300 border-4 grid-cols-3 h-16 w-16 font-bold text-3xl"
+                id="1"> 1 </button>
+            <button class="kal rounded-xl bg-blue-300 border-blue-300 border-4 grid-cols-3 h-16 w-16 font-bold text-3xl"
+                id="2"> 2 </button>
+            <button class="kal rounded-xl bg-blue-300 border-blue-300 border-4 grid-cols-3 h-16 w-16 font-bold text-3xl"
+                id="3"> 3 </button>
+            <button class="kal rounded-xl bg-blue-300 border-blue-300 border-4 grid-cols-3 h-16 w-16 font-bold text-3xl"
+                id="+"> + </button>
+            <button class="kal rounded-xl bg-blue-300 border-blue-300 border-4 grid-cols-3 h-16 w-16 font-bold text-3xl"
+                id="4"> 4 </button>
+            <button class="kal rounded-xl bg-blue-300 border-blue-300 border-4 grid-cols-3 h-16 w-16 font-bold text-3xl"
+                id="5"> 5 </button>
+            <button class="kal rounded-xl bg-blue-300 border-blue-300 border-4 grid-cols-3 h-16 w-16 font-bold text-3xl"
+                id="6"> 6 </button>
+            <button class="kal rounded-xl bg-blue-300 border-blue-300 border-4 grid-cols-3 h-16 w-16 font-bold text-3xl"
+                id="-"> - </button>
+            <button class="kal rounded-xl bg-blue-300 border-blue-300 border-4 grid-cols-3 h-16 w-16 font-bold text-3xl"
+                id="7"> 7 </button>
+            <button class="kal rounded-xl bg-blue-300 border-blue-300 border-4 grid-cols-3 h-16 w-16 font-bold text-3xl"
+                id="8"> 8 </button>
+            <button class="kal rounded-xl bg-blue-300 border-blue-300 border-4 grid-cols-3 h-16 w-16 font-bold text-3xl"
+                id="9"> 9 </button>
+            <button class="kal rounded-xl bg-blue-300 border-blue-300 border-4 grid-cols-3 h-16 w-16 font-bold text-3xl"
+                id="*"> * </button>
+            <button class="rounded-xl bg-blue-300 border-blue-300 border-4 grid-cols-3 h-16 w-16 font-bold text-3xl"
+                id="del">
+                DEL
+            </button>
+            <button class="kal rounded-xl bg-blue-300 border-blue-300 border-4 grid-cols-3 h-16 w-16 font-bold text-3xl"
+                id="0"> 0 </button>
+            <button class="rounded-xl bg-blue-300 border-blue-300 border-4 grid-cols-3 h-16 w-16 font-bold text-3xl"
+                id="ac">
+                AC
+            </button>
+            <button class="kal rounded-xl bg-blue-300 border-blue-300 border-4 grid-cols-3 h-16 w-16 font-bold text-3xl"
+                id="/"> / </button>
+        </div>
+        <button id="enter"
+            class="mt-2 mx-auto h-16 w-full font-bold text-3xl border-4 rounded-xl bg-blue-500 border-blue-300">CALCULATE
+        </button>
+    </div>
     <script src="script.js"></script>
 </body>
 
